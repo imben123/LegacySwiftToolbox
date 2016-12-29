@@ -9,6 +9,7 @@
 import Foundation
 
 public extension NSString {
+    
     func ends(with suffix: NSString) -> Bool {
         
         let suffixLength = suffix.length
@@ -18,6 +19,17 @@ public extension NSString {
         }
         
         return self.substring(from: self.length - suffixLength) == (suffix as String)
+    }
+    
+    func begins(with prefix: NSString) -> Bool {
+        
+        let prefixLength = prefix.length
+        
+        if prefixLength > self.length {
+            return false
+        }
+        
+        return self.substring(to: prefixLength) == (prefix as String)
     }
 }
 
@@ -54,4 +66,12 @@ public extension String {
         
         return self.substring(from: startIndex) == suffix
     }
+}
+
+public extension String {
+    
+    var url: URL? {
+        return URL(string: self)
+    }
+    
 }

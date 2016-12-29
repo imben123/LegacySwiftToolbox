@@ -11,8 +11,9 @@ import XCTest
 
 class RegexTests: XCTestCase {
     
+    let largeString = loadLargeSimpleString(for: RegexTests.self)
+    
     func testCanGetArrayOfMatchesForRegexPattern() {
-        let largeString = loadLargeSimpleString(for: type(of: self))
         let pattern = "\\W([^\\W]{12}\\.)\\W"
         let result = largeString.matches(of: pattern)
         let expected = [" pellentesque. ",
@@ -36,6 +37,12 @@ class RegexTests: XCTestCase {
                         " sollicitudin. "]
         
         XCTAssertEqual(result, expected)
+    }
+    
+    func testCanGetIndexGroupFromRegex() {
+        let pattern = "Nunc pharetra, erat at pretium (.*), neque mi pulvinar orci, in (.*) augue lectus sit amet (.*)."
+        let matches = largeString.matches(of: pattern, groupIndex: 2)
+        XCTAssertEqual(matches, ["venenatis"])
     }
     
 }

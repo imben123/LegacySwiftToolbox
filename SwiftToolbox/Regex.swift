@@ -9,8 +9,8 @@
 import Foundation
 
 public extension String {
-
-    func matches(of pattern: String) -> [String] {
+    
+    func matches(of pattern: String, groupIndex: Int = 0) -> [String] {
         
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         
@@ -18,7 +18,8 @@ public extension String {
         
         let matches = regex.matches(in: self, options: [], range: self.fullNSRange)
         for match in matches {
-            result.append(self.substring(with: self.swiftRange(from: match.range)))
+            let range = match.rangeAt(groupIndex)
+            result.append(self.substring(with: self.swiftRange(from: range)))
         }
         
         return result
