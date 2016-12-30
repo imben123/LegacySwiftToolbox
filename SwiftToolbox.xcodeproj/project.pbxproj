@@ -21,7 +21,6 @@
 		B51D7B3D1E15EEDF00DF5599 /* AlertViewConviniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */; };
 		B536933A1E15794E000246A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53693391E15794E000246A7 /* View.swift */; };
 		B536933C1E15944B000246A7 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536933B1E15944B000246A7 /* URLEncode.swift */; };
-		B54EBEBE1E16BA2D001BB53C /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EBEBD1E16BA2D001BB53C /* Comparable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewConviniences.swift; sourceTree = "<group>"; };
 		B53693391E15794E000246A7 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B536933B1E15944B000246A7 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
-		B54EBEBD1E16BA2D001BB53C /* Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 				B53693391E15794E000246A7 /* View.swift */,
 				B536933B1E15944B000246A7 /* URLEncode.swift */,
 				B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */,
-				B54EBEBD1E16BA2D001BB53C /* Comparable.swift */,
 				B50AD9591E11957500F46119 /* Info.plist */,
 			);
 			path = SwiftToolbox;
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50AD9D31E13E0CB00F46119 /* StringHelpers.swift in Sources */,
-				B54EBEBE1E16BA2D001BB53C /* Comparable.swift in Sources */,
 				B50AD9D11E13E08400F46119 /* StringRangeConversions.swift in Sources */,
 				B536933A1E15794E000246A7 /* View.swift in Sources */,
 				B51D7B3D1E15EEDF00DF5599 /* AlertViewConviniences.swift in Sources */,
