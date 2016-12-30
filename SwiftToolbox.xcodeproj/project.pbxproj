@@ -18,6 +18,9 @@
 		B50AD9DE1E13F2B100F46119 /* LargeString.txt in Resources */ = {isa = PBXBuildFile; fileRef = B50AD9DD1E13F2B100F46119 /* LargeString.txt */; };
 		B50AD9E01E13F71200F46119 /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50AD9DF1E13F71200F46119 /* RegexTests.swift */; };
 		B50AD9E21E13F9C200F46119 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50AD9E11E13F9C200F46119 /* ResourceLoader.swift */; };
+		B51D7B3D1E15EEDF00DF5599 /* AlertViewConviniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */; };
+		B536933A1E15794E000246A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53693391E15794E000246A7 /* View.swift */; };
+		B536933C1E15944B000246A7 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536933B1E15944B000246A7 /* URLEncode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		B50AD9DD1E13F2B100F46119 /* LargeString.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LargeString.txt; sourceTree = "<group>"; };
 		B50AD9DF1E13F71200F46119 /* RegexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexTests.swift; sourceTree = "<group>"; };
 		B50AD9E11E13F9C200F46119 /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewConviniences.swift; sourceTree = "<group>"; };
+		B53693391E15794E000246A7 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B536933B1E15944B000246A7 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,10 @@
 				B50AD9D41E13E10900F46119 /* Regex.swift */,
 				B50AD9DF1E13F71200F46119 /* RegexTests.swift */,
 				B50AD9D61E13E12F00F46119 /* FileHelpers.swift */,
+				B53693391E15794E000246A7 /* View.swift */,
+				B536933B1E15944B000246A7 /* URLEncode.swift */,
 				B50AD9591E11957500F46119 /* Info.plist */,
+				B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */,
 			);
 			path = SwiftToolbox;
 			sourceTree = "<group>";
@@ -229,6 +238,9 @@
 			files = (
 				B50AD9D31E13E0CB00F46119 /* StringHelpers.swift in Sources */,
 				B50AD9D11E13E08400F46119 /* StringRangeConversions.swift in Sources */,
+				B536933A1E15794E000246A7 /* View.swift in Sources */,
+				B51D7B3D1E15EEDF00DF5599 /* AlertViewConviniences.swift in Sources */,
+				B536933C1E15944B000246A7 /* URLEncode.swift in Sources */,
 				B50AD9D51E13E10900F46119 /* Regex.swift in Sources */,
 				B50AD9D71E13E12F00F46119 /* FileHelpers.swift in Sources */,
 			);
