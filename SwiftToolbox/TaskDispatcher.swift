@@ -23,4 +23,8 @@ public class TaskDispatcher {
     public func sync(_ task: @escaping ()->()) {
         queue.sync(execute: task)
     }
+    
+    public func asyncOnMainQueue(_ task: @escaping ()->()) {
+        DispatchQueue.main.async(execute: task)
+    }
 }

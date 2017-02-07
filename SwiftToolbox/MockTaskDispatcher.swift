@@ -13,6 +13,7 @@ public class MockTaskDispatcher: TaskDispatcher {
     
     public var syncCalled = false
     public var asyncCalled = false
+    public var asyncOnMainQueueCalled = false
     
     public var forceSynchronous = true
     private var synchronousTaskInProgress = false
@@ -39,6 +40,15 @@ public class MockTaskDispatcher: TaskDispatcher {
     override public func sync(_ task: @escaping () -> ()) {
         syncCalled = true
         super.sync(task)
+    }
+    
+    public override func asyncOnMainQueue(_ task: @escaping () -> ()) {
+        asyncOnMainQueueCalled = true
+        if forceSynchronous {
+            task()
+        } else {
+            super.asyncOnMainQueue(task)
+        }
     }
     
 }
