@@ -17,7 +17,7 @@ class ReliableNetworkTaskManagerTests: XCTestCase {
     var sut: ReliableNetworkTaskManager!
     
     override func setUp() {
-        taskDispatcher = MockTaskDispatcher(queue: DispatchQueue(label: "ReliableNetworkTaskManagerTestsQueue"))
+        taskDispatcher = MockTaskDispatcher()
         mockReachability = MockReachability()
         sut = ReliableNetworkTaskManager(reachability: mockReachability, taskDispatcher: taskDispatcher)
     }

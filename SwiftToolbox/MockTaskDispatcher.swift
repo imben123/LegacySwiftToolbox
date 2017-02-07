@@ -15,18 +15,22 @@ public class MockTaskDispatcher: TaskDispatcher {
     public var asyncCalled = false
     
     public var forceSynchronous = true
-    private var fakeSynchronousInProgress = false
+    private var synchronousTaskInProgress = false
+    
+    public init() {
+        super.init(queue: DispatchQueue(label: "MockTaskDispatcher.queue"))
+    }
     
     override public func async(_ task: @escaping () -> ()) {
         asyncCalled = true
         if forceSynchronous {
-            if fakeSynchronousInProgress {
+            if synchronousTaskInProgress {
                 print("ERROR!! -- Could not run synchronously in synchronous block. Running async instead.")
                 return super.async(task)
             }
-            fakeSynchronousInProgress = true
+            synchronousTaskInProgress = true
             super.sync(task)
-            fakeSynchronousInProgress = false
+            synchronousTaskInProgress = false
         } else {
             super.async(task)
         }
