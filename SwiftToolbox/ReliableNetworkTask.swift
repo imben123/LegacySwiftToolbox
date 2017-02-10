@@ -36,10 +36,10 @@ public class ReliableNetworkTaskManager {
                 return
             }
             
+            self?.pendingTasks = []
+            
             for task in pendingTasks {
-                task({
-                    // On failure
-                })
+                self?.performTask(task)
             }
         }
     }
