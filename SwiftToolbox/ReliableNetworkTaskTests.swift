@@ -51,6 +51,7 @@ class ReliableNetworkTaskManagerTests: XCTestCase {
             taskRan = true
         }
         
+        mockReachability.testReachability = .ReachableViaWiFi
         mockReachability.reachableBlock(mockReachability)
         XCTAssert(taskRan)
     }
