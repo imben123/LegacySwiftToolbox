@@ -22,6 +22,8 @@
 		B51D7B3D1E15EEDF00DF5599 /* AlertViewConviniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */; };
 		B536933A1E15794E000246A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53693391E15794E000246A7 /* View.swift */; };
 		B536933C1E15944B000246A7 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536933B1E15944B000246A7 /* URLEncode.swift */; };
+		B541EABE1EA3DB0800613859 /* MultiSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541EABD1EA3DB0800613859 /* MultiSectionDataSource.swift */; };
+		B541EAC21EA3DB8600613859 /* MultiSectionDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541EAC11EA3DB8600613859 /* MultiSectionDataSourceTests.swift */; };
 		B5DF5B741E3D122800FA6FF4 /* TaskDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B721E3D122800FA6FF4 /* TaskDispatcher.swift */; };
 		B5DF5B771E3D123100FA6FF4 /* MockTaskDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B731E3D122800FA6FF4 /* MockTaskDispatcher.swift */; };
 		B5DF5B7A1E3D12B200FA6FF4 /* ReliableNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B781E3D12B200FA6FF4 /* ReliableNetworkTask.swift */; };
@@ -64,6 +66,8 @@
 		B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewConviniences.swift; sourceTree = "<group>"; };
 		B53693391E15794E000246A7 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		B536933B1E15944B000246A7 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
+		B541EABD1EA3DB0800613859 /* MultiSectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSectionDataSource.swift; sourceTree = "<group>"; };
+		B541EAC11EA3DB8600613859 /* MultiSectionDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSectionDataSourceTests.swift; sourceTree = "<group>"; };
 		B5DF5B721E3D122800FA6FF4 /* TaskDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDispatcher.swift; sourceTree = "<group>"; };
 		B5DF5B731E3D122800FA6FF4 /* MockTaskDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTaskDispatcher.swift; sourceTree = "<group>"; };
 		B5DF5B781E3D12B200FA6FF4 /* ReliableNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReliableNetworkTask.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				B50AD9DF1E13F71200F46119 /* RegexTests.swift */,
 				B50AD9D61E13E12F00F46119 /* FileHelpers.swift */,
 				B53693391E15794E000246A7 /* View.swift */,
+				B541EABD1EA3DB0800613859 /* MultiSectionDataSource.swift */,
+				B541EAC11EA3DB8600613859 /* MultiSectionDataSourceTests.swift */,
 				B536933B1E15944B000246A7 /* URLEncode.swift */,
 				B51D7B3C1E15EEDF00DF5599 /* AlertViewConviniences.swift */,
 				B50AD9591E11957500F46119 /* Info.plist */,
@@ -376,6 +382,7 @@
 				B5DF5B7A1E3D12B200FA6FF4 /* ReliableNetworkTask.swift in Sources */,
 				B50AD9D51E13E10900F46119 /* Regex.swift in Sources */,
 				B50AD9D71E13E12F00F46119 /* FileHelpers.swift in Sources */,
+				B541EABE1EA3DB0800613859 /* MultiSectionDataSource.swift in Sources */,
 				B5DF5B871E3D16F600FA6FF4 /* MockReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +395,7 @@
 				B50AD9E01E13F71200F46119 /* RegexTests.swift in Sources */,
 				B5DF5B7C1E3D12E400FA6FF4 /* ReliableNetworkTaskTests.swift in Sources */,
 				B50AD9E21E13F9C200F46119 /* ResourceLoader.swift in Sources */,
+				B541EAC21EA3DB8600613859 /* MultiSectionDataSourceTests.swift in Sources */,
 				B50AD9DA1E13E24800F46119 /* StringRangeConversionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
