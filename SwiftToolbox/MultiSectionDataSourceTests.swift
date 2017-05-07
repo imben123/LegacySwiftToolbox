@@ -37,15 +37,15 @@ class MultiSectionDataSourceTests: XCTestCase {
         sut = MultiSectionDataSource(sections: exampleSections)
     }
     
-    func test_isACollectionViewDataSource() {
+    func testIsACollectionViewDataSource() {
         let _ = sut as UICollectionViewDataSource
     }
     
-    func test_numberOfSections_equalToNumberOfComponentSections() {
+    func testNumberOfSections_equalToNumberOfComponentSections() {
         XCTAssertEqual(sut.numberOfSections(in: collectionView), exampleSections.count)
     }
     
-    func test_numberOfRowsIsTakenFromSection() {
+    func testNumberOfRowsIsTakenFromSection() {
         
         XCTAssertEqual(sut.collectionView(collectionView, numberOfItemsInSection: 0),
                        exampleSections[0].collectionView(collectionView, numberOfItemsInSection: 0))
@@ -54,7 +54,7 @@ class MultiSectionDataSourceTests: XCTestCase {
                        exampleSections[1].collectionView(collectionView, numberOfItemsInSection: 0))
     }
     
-    func test_cellsArePassedFromSection() {
+    func testCellsArePassedFromSection() {
         
         let indexPathSection0 = IndexPath(item: 0, section: 0)
         let indexPathSection1 = IndexPath(item: 0, section: 1)
