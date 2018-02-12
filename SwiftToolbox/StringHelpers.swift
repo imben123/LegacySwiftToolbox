@@ -56,15 +56,15 @@ public extension String {
     
     private func _ends(with suffix: String) -> Bool {
         
-        let suffixLength = suffix.characters.count
+        let suffixLength = suffix.count
         
-        if suffixLength > self.characters.count {
+        if suffixLength > self.count {
             return false
         }
         
         let startIndex = self.index(self.endIndex, offsetBy: -suffixLength)
         
-        return self.substring(from: startIndex) == suffix
+        return self[startIndex...] == suffix
     }
 }
 

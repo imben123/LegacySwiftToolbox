@@ -18,8 +18,9 @@ public extension String {
         
         let matches = regex.matches(in: self, options: [], range: self.fullNSRange)
         for match in matches {
-            let range = match.rangeAt(groupIndex)
-            result.append(self.substring(with: self.swiftRange(from: range)))
+            let range = match.range(at: groupIndex)
+            let substring = self[swiftRange(from: range)]
+            result.append(String(substring))
         }
         
         return result

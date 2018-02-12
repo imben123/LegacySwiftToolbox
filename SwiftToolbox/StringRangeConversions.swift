@@ -30,10 +30,10 @@ public extension String {
     private func _swiftRange(from range: NSRange) -> Range<String.Index> {
         
         let substring = (self as NSString).substring(with: range) as String
-        let subStringLength = substring.characters.count
+        let subStringLength = substring.count
         
         let prefix = (self as NSString).substring(to: range.location)
-        let prefixLength = prefix.characters.count
+        let prefixLength = prefix.count
         
         let startIndex = self.index(self.startIndex, offsetBy: prefixLength)
         let endIndex = self.index(startIndex, offsetBy: subStringLength)
