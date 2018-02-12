@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/imben123/SwiftToolbox"
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE.txt" }
 
   s.author             = { "Ben Davis" => "ben@bendavisapps.co.uk" }
   s.social_media_url   = "http://twitter.com/imben123"
@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/imben123/SwiftToolbox.git", :tag => "#{s.version}" }
+  s.source_files  = "SwiftToolbox"
+  s.exclude_files = "SwiftToolbox/*Tests.{swift,h,m}"
 
   s.dependency "Reachability", "3.2"
 
