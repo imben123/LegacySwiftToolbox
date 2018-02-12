@@ -26,6 +26,8 @@
 		B541EABE1EA3DB0800613859 /* MultiSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541EABD1EA3DB0800613859 /* MultiSectionDataSource.swift */; };
 		B541EAC21EA3DB8600613859 /* MultiSectionDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541EAC11EA3DB8600613859 /* MultiSectionDataSourceTests.swift */; };
 		B58A83BA1EA41EE8000E7A5C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A83B91EA41EE8000E7A5C /* Size.swift */; };
+		B5C09452203153DD00EF166F /* Collection+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C09451203153DD00EF166F /* Collection+Utils.swift */; };
+		B5C09454203153F300EF166F /* Collection+UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C09453203153F300EF166F /* Collection+UtilsTests.swift */; };
 		B5DF5B741E3D122800FA6FF4 /* TaskDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B721E3D122800FA6FF4 /* TaskDispatcher.swift */; };
 		B5DF5B771E3D123100FA6FF4 /* MockTaskDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B731E3D122800FA6FF4 /* MockTaskDispatcher.swift */; };
 		B5DF5B7A1E3D12B200FA6FF4 /* ReliableNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF5B781E3D12B200FA6FF4 /* ReliableNetworkTask.swift */; };
@@ -71,6 +73,8 @@
 		B541EABD1EA3DB0800613859 /* MultiSectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSectionDataSource.swift; sourceTree = "<group>"; };
 		B541EAC11EA3DB8600613859 /* MultiSectionDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSectionDataSourceTests.swift; sourceTree = "<group>"; };
 		B58A83B91EA41EE8000E7A5C /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		B5C09451203153DD00EF166F /* Collection+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Utils.swift"; sourceTree = "<group>"; };
+		B5C09453203153F300EF166F /* Collection+UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+UtilsTests.swift"; sourceTree = "<group>"; };
 		B5DF5B721E3D122800FA6FF4 /* TaskDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDispatcher.swift; sourceTree = "<group>"; };
 		B5DF5B731E3D122800FA6FF4 /* MockTaskDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTaskDispatcher.swift; sourceTree = "<group>"; };
 		B5DF5B781E3D12B200FA6FF4 /* ReliableNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReliableNetworkTask.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				B50AD9581E11957500F46119 /* SwiftToolbox.h */,
+				B5C09451203153DD00EF166F /* Collection+Utils.swift */,
+				B5C09453203153F300EF166F /* Collection+UtilsTests.swift */,
 				B5DF5B861E3D16F600FA6FF4 /* MockReachability.swift */,
 				B5DF5B781E3D12B200FA6FF4 /* ReliableNetworkTask.swift */,
 				B5DF5B791E3D12B200FA6FF4 /* ReliableNetworkTaskTests.swift */,
@@ -397,6 +403,7 @@
 				B541EABE1EA3DB0800613859 /* MultiSectionDataSource.swift in Sources */,
 				B5DF5B871E3D16F600FA6FF4 /* MockReachability.swift in Sources */,
 				B58A83BA1EA41EE8000E7A5C /* Size.swift in Sources */,
+				B5C09452203153DD00EF166F /* Collection+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +415,7 @@
 				B50AD9E01E13F71200F46119 /* RegexTests.swift in Sources */,
 				B5DF5B7C1E3D12E400FA6FF4 /* ReliableNetworkTaskTests.swift in Sources */,
 				B50AD9E21E13F9C200F46119 /* ResourceLoader.swift in Sources */,
+				B5C09454203153F300EF166F /* Collection+UtilsTests.swift in Sources */,
 				B541EAC21EA3DB8600613859 /* MultiSectionDataSourceTests.swift in Sources */,
 				B50AD9DA1E13E24800F46119 /* StringRangeConversionsTests.swift in Sources */,
 			);
