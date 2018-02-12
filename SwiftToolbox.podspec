@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftToolbox"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Some simple functions I find myself needing across projects"
   s.description  = <<-DESC
   Contains mostly categories and helper functions I use commonly between many projects.
