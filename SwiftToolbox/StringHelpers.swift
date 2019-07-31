@@ -46,25 +46,7 @@ public extension String {
 public extension String {
     
     func ends(with suffix: String) -> Bool {
-        
-        if self.isSimpleString() {
-            return (self as NSString).ends(with: suffix as NSString)
-        }
-        
-        return _ends(with: suffix)
-    }
-    
-    private func _ends(with suffix: String) -> Bool {
-        
-        let suffixLength = suffix.count
-        
-        if suffixLength > self.count {
-            return false
-        }
-        
-        let startIndex = self.index(self.endIndex, offsetBy: -suffixLength)
-        
-        return self[startIndex...] == suffix
+        return hasSuffix(suffix)
     }
 }
 

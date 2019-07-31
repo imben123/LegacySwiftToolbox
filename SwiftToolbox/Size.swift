@@ -10,7 +10,7 @@ import Foundation
 
 public extension CGSize {
     
-    public static func *(_ lhs: CGSize, rhs: CGFloat) -> CGSize {
+    static func *(_ lhs: CGSize, rhs: CGFloat) -> CGSize {
         return CGSize(width: lhs.width*rhs, height: lhs.height*rhs)
     }
     

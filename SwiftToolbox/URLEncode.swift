@@ -13,8 +13,7 @@ public extension URLRequest {
     /// Populate the HTTPBody of `application/x-www-form-urlencoded` request
     ///
     /// - parameter parameters:   A dictionary of keys and values to be added to the request
-    
-    public mutating func setURLEncodedBody(parameters: [String : String]) {
+    mutating func setURLEncodedBody(parameters: [String : String]) {
         let parameterArray = parameters.map { (key, value) -> String in
             return "\(key)=\(value.addingPercentEscapesForQueryValue()!)"
         }
@@ -32,8 +31,7 @@ public extension String {
     /// http://www.w3.org/TR/html5/forms.html#application/x-www-form-urlencoded-encoding-algorithm
     ///
     /// - returns: Return percent escaped string.
-    
-    public func addingPercentEscapesForQueryValue() -> String? {
+    func addingPercentEscapesForQueryValue() -> String? {
         let allowedCharacters = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._* ")
         
         return self.addingPercentEncoding(withAllowedCharacters: allowedCharacters)?.replacingOccurrences(of: " ", with: "+")
