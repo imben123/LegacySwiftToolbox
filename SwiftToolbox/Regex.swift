@@ -15,12 +15,16 @@ public extension String {
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         
         var result: [String] = []
-        
-        let matches = regex.matches(in: self, options: [], range: self.fullNSRange)
-        for match in matches {
-            let range = match.range(at: groupIndex)
-            let substring = self[swiftRange(from: range)]
-            result.append(String(substring))
+
+        for stringSubstring in self.split(separator: "\n") {
+            let string = String(stringSubstring)
+            let matches = regex.matches(in: string, options: [], range: string.fullNSRange)
+            for match in matches {
+                let range = match.range(at: groupIndex)
+                let substring = string[swiftRange(from: range)]
+                result.append(String(substring))
+            }
+
         }
         
         return result
